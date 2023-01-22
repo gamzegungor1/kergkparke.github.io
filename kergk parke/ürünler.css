@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease;
+
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*kenardaki boşluklar */
+}
+
+header {
+    
+        background-color: beige;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 9%;
+        margin: 1.5rem 7%;
+        border-radius: 30rem;
+        box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    
+ 
+    
+    
+    /*arkaplan ile yazı arasındaki mesafeyi açmak için*/
+}
+.header .buttons button {
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-left: 1rem;
+    background-color: transparent;
+    background-color: red;
+}
+nav {
+    display: inline-block;
+    /*etiketleri yan yana getirmek için kullanılır.*/
+
+    text-align: right;
+    /*sağa hizalama*/
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+    width: 200px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+header nav ul li a{
+    background-color: beige;
+    font-style: bold;
+    font-size: 125%;
+}
+nav ul li a {
+    display: block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-right: auto;
+    /*yazının altını, üztünü çizmek veya varolanı silmek için kullanılır.*/
+
+}
+
+nav ul li a:hover {
+
+    background-color: bisque;
+    color: black;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+
+ .navbar a {
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+    font-size: 30px;
+
+}
+/*MENÜ ALTINDAKİ RESİM KISMI*/
+
+#section-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(image/2.jpg);
+    background-position: top;
+    /*arkaplana yerleştirdiğimiz resmin konumunu belirtmek için kullanılır.*/
+    padding: 280px;
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+}
+
+.btn-s1 {
+    margin-left: 25%;
+    /*html ögelerine sol dış boşluk vermek için kullanılır.*/
+    margin-top: 20px;
+    /*html öğelerine yukarı dış boşluk vermek için kullanılır.*/
+    background-color: bisque;
+    color: black;
+    padding: 10px 20px;
+    /*ilk değer alttan üstten değeri ikinci değer sağdan soldan değeri*/
+    font-size: 20px;
+    border-radius: 6px;
+    /*kenarlık yuvarlatma*/
+    transition: color 1s;
+
+}
+
+.btn-s1:hover {
+    color: white;
+}
+
+
+/*KART*/
+#section-2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0px;
+}
+
+.card {
+    width: 20%;
+    /*resmin genişlik kısmı*/
+    box-shadow: 0px 5px 9px 0 rgba(0, 0, 0, 0.4);
+    /*gölge efekti vermek için kullanılır.*/
+    border-radius: 20px;
+}
+
+.card:hover {
+    opacity: 0, 7;
+}
+
+/*kartların içerik kısmı*/
+.container {
+    padding: 15px 20px;
+}
+
+.container p {
+    margin: 20px 0;
+    /*parke başlığı ile yazısı arası boşlık ayarlama*/
+}
+
+/*resim için*/
+img {
+    border-radius: 50px 50px 50px 50px;
+    width: 290px;
+}
+
+p {
+    font-size: 19px;
+    /*yazının büyüklüğü*/
+}
+
+#section-3 {
+    display: flex;
+    justify-content: space-around;
+    margin: 200px 0px;
+}
+
+/* footer start*/
+.footer {
+    background-color: antiquewhite;
+    text-align: center;
+
+}
+
+.footer .search {
+
+    justify-content: center;
+    width: auto;
+
+
+}
+
+.footer .search .search-input {
+    width: 7rem;
+    background-color: white;
+
+
+}
+
+.footer .search .btn-primary {
+    background-color: olivedrab;
+    color: black;
+
+    padding: 0.4rem 2.5rem;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+.footer .share {
+    padding: 2rem 1rem;
+}
+
+.footer .share a {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    color: black;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 0.3rem;
+    border: #455A64;
+
+
+}
+
+.footer .share a:hover {
+    background-color: orange;
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.footer .links a {
+    background-color: rgb(86, 100, 100);
+    padding: 0.7rem 2rem;
+    color: black;
+    font-size: 0.8rem;
+    border: var(--main-color);
+}
+
+.footer .links a:hover {
+    background-color: beige;
+    opacity: 0.7;
+}
+
+.footer .credit {
+    font-size: 1.5rem;
+    padding-top: 15px;
+
+
+}
+
+.footer .credit span {
+    color: brown;
+    font-style: var(--border);
+}
+
+/* footer end*/
